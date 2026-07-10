@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#080b09" />
+  <meta
+    name="description"
+    content="AF Bazzar, a marketplace by AcademeForge, is being forged for students, creators, educators and developers. Launching soon."
+  />
+  <meta name="author" content="AcademeForge" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://bazzar.academeforge.in/" />
+ 
+  <title>AF Bazzar — Coming Soon | AcademeForge</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
+  <script src="script.js" defer></script>
+  <style>
+    .coming-soon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-light);
+    }
+    .coming-soon-container img {
+      max-width: 300px;
+      margin-bottom: 30px;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+    .coming-soon-container h1 {
+      font-size: 36px;
+      color: var(--dark);
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    .coming-soon-container p {
+      font-size: 18px;
+      color: var(--text-main);
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-left">
+        <span data-i18n="welcome_msg">Welcome to AF Bazzar</span>
+        <span data-i18n="support_msg">Support: help@academeforge.in</span>
+        <div class="lang-selector" style="position:relative; display:inline-block;">
+           <button class="lang-switcher" style="color:inherit" id="current-lang-text">Eng ▾</button>
+           <div class="lang-dropdown">
+              <a href="#" class="lang-option" data-lang="en">English</a>
+              <a href="#" class="lang-option" data-lang="hi">हिंदी</a>
+           </div>
+        </div>
+      </div>
+      <div class="top-center">
+        <strong data-i18n="promo_welcome">Welcome</strong> <span data-i18n="promo_beta">to the AF Bazzar Beta!</span>
+      </div>
+      <div class="top-right">
+        <a href="index.html" style="color:var(--primary); font-weight:bold;">← Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER NAV -->
+  <header class="header">
+    <div class="container">
+      <a href="https://academeforge.in/" class="brand-link" style="text-decoration: none;">
+        <div class="brand">
+          <img src="IMG/logo.png" alt="AF Bazzar Logo">
+          <div style="display:flex; flex-direction:column;">
+            <div class="brand-name">AF Bazzar</div>
+            <span style="font-size: 10px; color: var(--text-light); line-height: 1;" data-i18n="powered_by">Powered by AcademeForge</span>
+          </div>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+      </nav>
+      <div class="header-icons"></div>
+    </div>
+  </header>
+
+  <!-- COMING SOON CONTENT -->
+  <main class="coming-soon-container">
+    <img src="IMG/download.png" alt="Unicorn Mascot">
+    <h1 data-i18n="modal_title">We're still cooking!</h1>
+    <p data-i18n="modal_desc">We are still cooking for you, stay tuned for updates.</p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="https://academeforge.in/" style="text-decoration: none;">
+            <div class="brand" style="margin-bottom: 5px;">
+              <img src="IMG/logo.png" alt="AF Bazzar Logo" style="width:24px;height:24px;">
+              <div class="brand-name" style="color:var(--white);font-size:20px;">AF Bazzar</div>
+            </div>
+            <div style="font-size: 10px; color: #888; margin-bottom: 20px;" data-i18n="powered_by">Powered by AcademeForge</div>
+          </a>
+          <p data-i18n="footer_desc">The definitive digital and physical marketplace crafted by AcademeForge.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="quick_links">Quick Links</h4>
+          <ul>
+            <li><a href="https://academeforge.in/about/how-its-going/index.html" data-i18n="about_us">About Us</a></li>
+            <li><a href="https://academeforge.in/contact/help/index.html" data-i18n="contact">Contact</a></li>
+            <li><a href="https://academeforge.in/faq/index.html" data-i18n="faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="customer_service">Customer Service</h4>
+          <ul>
+            <li><a href="delivery-policy.html" data-i18n="delivery_policy">Delivery Policy</a></li>
+            <li><a href="delivery-policy.html" data-i18n="returns_exchanges">Returns & Exchanges</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="copyright">
+        &copy; 2026 AF Bazzar by AcademeForge. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
