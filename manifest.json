@@ -1,0 +1,23 @@
+{
+  "name": "AF Bazzar",
+  "short_name": "AF Bazzar",
+  "description": "A next-generation marketplace for students, creators, educators, and developers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#080b09",
+  "icons": [
+    {
+      "src": "IMG/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "IMG/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
