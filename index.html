@@ -1,13 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AF Bazzar — Coming Soon | AcademeForge</title>
-<meta name="description" content="AF Bazzar, a marketplace by AcademeForge, is being forged for students, creators, educators and developers. Launching soon.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    if (!(localStorage.getItem('af_student_logged_in') === 'true' && localStorage.getItem('af_student_uuid') && localStorage.getItem('af_student_name'))) {
+      window.location.replace('index.html');
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#080b09" />
+  <meta
+    name="description"
+    content="AF Bazzar, a marketplace by AcademeForge, is being forged for students, creators, educators and developers. Launching soon."
+  />
+  <meta
+    name="keywords"
+    content="AF Bazzar, AcademeForge marketplace, student marketplace, creators, educators, developers, academeforge bazzar"
+  />
+  <meta name="author" content="AcademeForge" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://bazzar.academeforge.in/" />
+ 
+  <title>AF Bazzar — Coming Soon | AcademeForge</title>
+ 
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://bazzar.academeforge.in/" />
+  <link rel="alternate" hreflang="x-default" href="https://bazzar.academeforge.in/" />
+ 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AF Bazzar — AcademeForge" />
+  <meta property="og:title" content="AF Bazzar — Coming Soon | AcademeForge" />
+  <meta property="og:description" content="AF Bazzar, a marketplace by AcademeForge, is being forged for students, creators, educators and developers. Launching soon." />
+  <meta property="og:url" content="https://bazzar.academeforge.in/" />
+  <meta property="og:image" content="https://academeforge.in/IMG/og-bazzar.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="AF Bazzar by AcademeForge — Student Marketplace" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="en_IN" />
+ 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@AcademeForge" />
+  <meta name="twitter:title" content="AF Bazzar — Coming Soon | AcademeForge" />
+  <meta name="twitter:description" content="AF Bazzar, a marketplace by AcademeForge, is being forged for students, creators, educators and developers." />
+  <meta name="twitter:image" content="https://academeforge.in/IMG/og-bazzar.webp" />
+  <meta name="twitter:image:alt" content="AF Bazzar by AcademeForge" />
+ 
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AF Bazzar" />
+  <link rel="apple-touch-icon" href="https://academeforge.in/IMG/logo.png" />
+  <meta name="msapplication-TileColor" content="#080b09" />
+  <meta name="msapplication-TileImage" content="https://academeforge.in/IMG/logo.png" />
+  <meta name="application-name" content="AF Bazzar" />
+  <link rel="icon" type="image/png" href="https://academeforge.in/IMG/logo.png" />
+ 
+  <!-- Dublin Core -->
+  <meta name="DC.title" content="AF Bazzar — AcademeForge Marketplace" />
+  <meta name="DC.creator" content="AcademeForge" />
+  <meta name="DC.description" content="A next-generation marketplace for students, creators, educators, and developers." />
+  <meta name="DC.publisher" content="AcademeForge" />
+  <meta name="geo.region" content="US, GB, IN" />
+  <meta name="geo.placename" content="Global" />
+  <meta name="distribution" content="global" />
+  <meta name="coverage" content="Worldwide, US, UK, India" />
+ 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+ 
+  <!-- ===== STRUCTURED DATA ===== -->
+ 
+  <!-- WebSite schema with SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AF Bazzar — AcademeForge",
+    "url": "https://bazzar.academeforge.in/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://bazzar.academeforge.in/?q={search_term_string}",
+      "query-input": "required name={search_term_string}"
+    }
+  }
+  </script>
+ 
+  <!-- WebPage schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "AF Bazzar — Coming Soon | AcademeForge",
+    "url": "https://bazzar.academeforge.in/",
+    "description": "AF Bazzar, a marketplace by AcademeForge, is being forged for students, creators, educators and developers.",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "AcademeForge",
+      "url": "https://academeforge.in/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AcademeForge",
+      "url": "https://academeforge.in/"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "AcademeForge", "item": "https://academeforge.in/"},
+        {"@type": "ListItem", "position": 2, "name": "AF Bazzar", "item": "https://bazzar.academeforge.in/"}
+      ]
+    }
+  }
+  </script>
+ 
+  <!-- FAQPage schema for rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is AF Bazzar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AF Bazzar is an upcoming marketplace by AcademeForge designed for students, creators, educators, and developers to share and discover resources."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who made AF Bazzar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AF Bazzar is developed and maintained by AcademeForge, a global student learning technology platform."
+        }
+      }
+    ]
+  }
+  </script>
 <style>
 /* ============ TOKENS ============ */
 :root{
@@ -59,7 +203,7 @@ img{max-width:100%; display:block;}
 .wrap{
   max-width: 1220px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 10%;
 }
 
 /* ============ AMBIENT BACKGROUND (forge glow) ============ */
@@ -126,7 +270,7 @@ img{max-width:100%; display:block;}
   display:flex; align-items:center; justify-content:center;
   padding: 4px;
 }
-.brand-mark img{ width:100%; height:100%; object-fit:contain; }
+.brand-mark img{ width:100%; height:100%; object-fit:contain; transform: scale(1.5); }
 .brand-text{ display:flex; flex-direction:column; line-height:1; }
 .brand-text .name{
   font-family: var(--font-display);
@@ -720,8 +864,8 @@ footer{
   .nav-links{ display:none; }
 }
 @media (max-width: 560px){
-  .wrap{ padding: 0 20px; }
-  .nav-inner{ padding: 14px 20px; }
+  .wrap{ padding: 0 10%; }
+  .nav-inner{ padding: 14px 10%; }
   .grid{ grid-template-columns: 1fr; }
   .hero-meta{ gap: 24px; }
   .foot-inner{ flex-direction:column; align-items:flex-start; }
@@ -757,15 +901,15 @@ footer{
     <div class="hero-copy">
       <div class="eyebrow">AF Bazzar — Pre-Launch</div>
       <h1>AF Bazzar is coming soon.<br>We're crafting something <span class="accent">extraordinary</span>.</h1>
-      <p class="lede">AF Bazzar is being carefully built by AcademeForge to deliver a high-quality marketplace experience — a single home for the resources students, creators, educators, and developers actually rely on.</p>
+      <p class="lede">AF Bazzar is being carefully built by AcademeForge as a new kind of marketplace — one designed with the academic and creative community in mind. What it offers is still taking shape, and we'd rather get it right than announce it early.</p>
       <div class="hero-meta">
         <div class="item">
-          <div class="k">Built For</div>
-          <div class="v">Students &amp; Educators</div>
+          <div class="k">Built By</div>
+          <div class="v">AcademeForge</div>
         </div>
         <div class="item">
-          <div class="k">Also For</div>
-          <div class="v">Creators &amp; Developers</div>
+          <div class="k">Made For</div>
+          <div class="v">The Academic &amp; Creative Community</div>
         </div>
         <div class="item">
           <div class="k">Status</div>
@@ -810,9 +954,9 @@ footer{
       <h2>Good things take time.</h2>
       <p class="lede">Every detail of AF Bazzar is being designed, refined, and polished before launch — from the first sketch to the smallest interaction. Nothing ships until it earns its place.</p>
       <div class="cook-list">
-        <div class="row"><span class="tag">Foundation</span> Marketplace architecture and content structure</div>
+        <div class="row"><span class="tag">Foundation</span> Shaping the marketplace's core structure</div>
         <div class="row"><span class="tag">Craft</span> Visual language, motion, and interaction design</div>
-        <div class="row"><span class="tag">Curation</span> Vetting the first wave of resources and collections</div>
+        <div class="row"><span class="tag">Direction</span> Deciding, deliberately, what belongs on day one</div>
       </div>
     </div>
   </section>
@@ -821,20 +965,31 @@ footer{
   <section class="features wrap" id="features">
     <div class="section-head">
       <div class="eyebrow">What's Inside</div>
-      <h2>A marketplace built around what you already search for.</h2>
-      <p>Every category below is still under construction — locked for now, unlocking at launch.</p>
+      <h2>Still taking shape — on purpose.</h2>
+      <p>We haven't locked in exactly what AF Bazzar will offer, and we'd rather stay quiet than promise something before it's real. Here's what we can say for certain.</p>
     </div>
     <div class="grid">
 
       <div class="card">
         <div class="card-top">
           <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18"/></svg>
+          </div>
+          <div class="lock-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2.5"/></svg>Deciding</div>
+        </div>
+        <h3>What it will offer</h3>
+        <p class="desc">Still under discussion. We're taking the time to get this right rather than lock it in early.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
           </div>
-          <div class="lock-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Locked</div>
+          <div class="lock-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Confirmed</div>
         </div>
-        <h3>Digital Resources</h3>
-        <p class="desc">Curated files, templates, and toolkits ready to drop into your next project.</p>
+        <h3>It's a marketplace</h3>
+        <p class="desc">Built by AcademeForge, for the academic and creative community. The specifics come later.</p>
       </div>
 
       <div class="card">
@@ -842,54 +997,10 @@ footer{
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4a2 2 0 0 0-2 2v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-4V6a2 2 0 0 0-2-2z"/><path d="M8 12h8M8 16h5"/></svg>
           </div>
-          <div class="lock-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Locked</div>
+          <div class="lock-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Confirmed</div>
         </div>
-        <h3>Study Materials</h3>
-        <p class="desc">Notes, guides, and revision sets built by students who've been there.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-top">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M4 20l7-14 7 14z"/><path d="M8.5 14h6"/></svg>
-          </div>
-          <div class="lock-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Locked</div>
-        </div>
-        <h3>Design Assets</h3>
-        <p class="desc">Mockups, UI kits, and illustrations for work that needs to look sharp.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-top">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 9l-4 4 4 4"/><path d="M16 9l4 4-4 4"/><path d="M13 5l-2 14"/></svg>
-          </div>
-          <div class="lock-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Locked</div>
-        </div>
-        <h3>Developer Tools</h3>
-        <p class="desc">Boilerplates, snippets, and utilities to skip the boring setup work.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-top">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8z"/></svg>
-          </div>
-          <div class="lock-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Locked</div>
-        </div>
-        <h3>AI Resources</h3>
-        <p class="desc">Prompts, workflows, and model add-ons for working smarter with AI.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-top">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7l8-4 8 4-8 4-8-4z"/><path d="M4 7v10l8 4 8-4V7"/><path d="M12 11v10"/></svg>
-          </div>
-          <div class="lock-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Locked</div>
-        </div>
-        <h3>Premium Collections</h3>
-        <p class="desc">Hand-picked bundles that pair well together, curated by the AcademeForge team.</p>
+        <h3>It's carefully made</h3>
+        <p class="desc">No rushed launch. Every decision gets weighed before it ships.</p>
       </div>
 
     </div>
